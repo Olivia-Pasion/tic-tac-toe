@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
 const GameContext = createContext();
 
@@ -111,12 +111,5 @@ const GameProvider = ({ children }) => {
   );
 };
 
-const useGame = () => {
-  const context = useContext(GameContext);
 
-  if (context === undefined) {
-    throw new Error('useGame must be within a GameProvider');
-  }
-};
-
-export { useGame, GameProvider, GameContext };
+export { GameProvider, GameContext };

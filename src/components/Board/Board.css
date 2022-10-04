@@ -6,6 +6,7 @@
   border: 5px solid lightcoral;
   border-radius: 10px;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  padding: 20px;
 }
 
 .box {
@@ -18,4 +19,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3px;
 }
