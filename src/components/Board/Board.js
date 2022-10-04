@@ -1,8 +1,17 @@
-import { useGame } from '../../context/GameContext';
-import { Box } from '../Box/Box';
+// react
+import { useContext } from 'react';
+
+// context
+import { GameContext } from '../../context/GameContext';
+
+// components
+import Box from '../Box/Box';
+
+// styles
+import './Board.css';
 
 export default function Board() {
-  const { board } = useGame();
+  const { board } = useContext(GameContext);
   return (
     <div className="board">
       {board.map(({ space, content }) => (

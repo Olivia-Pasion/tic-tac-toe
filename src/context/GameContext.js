@@ -119,4 +119,4 @@ const useGame = () => {
   }
 };
 
-export { useGame, GameProvider };
+export { useGame, GameProvider, GameContext };
