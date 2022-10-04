@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+// component
+import Board from './components/Board/Board';
+import Header from './components/Header/Header';
+
+// style
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Try Your Knack at Tic-Tac!... toe</h1>
+      <Header />
+      <Board />
     </div>
   );
 }

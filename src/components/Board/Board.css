@@ -1,0 +1,23 @@
+.board {
+  width: 600px;
+  height: 600px;
+  color: white;
+  display: grid;
+  border: 5px solid lightcoral;
+  border-radius: 10px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  padding: 20px;
+}
+
+.box {
+  background-color: pink;
+  border: 5px solid magenta;
+  border-radius: 10px;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
