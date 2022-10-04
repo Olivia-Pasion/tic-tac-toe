@@ -10,8 +10,6 @@ const GameProvider = ({ children }) => {
   const [message, setMessage] = useState(`your turn ${currentPlayer}`);
   const [active, setActive] = useState(true);
 
-
-
   return (
     <GameContext.Provider value={{
       board, setBoard,
